@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script>
+            //Tipos de Variáveis
+
+            // var = Variante global 
+            // let = Variante no escopo
+            // const = Constante (Não muda)
+
+                //----------VAR----------
+
+                var nome = "Danilo";
+                console.log(nome);
+
+                // A variável também pode ser alterada.
+
+                var idade = 23;
+                idade = 24;
+                console.log(idade);
+
+                //----------LET----------
+
+                // Let é limitado ao escopo:
+
+                    // Forma errada.
+
+                {
+                    let sobrenome = "Rocha";
+                }
+                    console.log(sobrenome); // Note que está fora do escopo
+
+
+                    // Forma correta
+                
+                {
+
+                    let idade = 25;
+
+                    console.log(idade);
+
+                }
+
+                //-----CONSTANTES------
+
+                // O valor não pode ser alterado.
+
+                    // Forma correta
+
+                const nome = "Dan";
+                console.log(nome);
+
+                    // Forma errada
+
+                const nome = "Dan";
+                nome = "Nylo";
+                console.log(nome);
+                
+
+                //Tipos de variáveis.
+
+                //Num
+                var num = 24;
+                //String
+                var nome = "Danilo";
+                //Boolean
+                var boolean = true & false;
+
+                //Juntando variáveis
+
+                console.log(num + nome);
+
+                ou
+
+                var num = "Developer";
+                var texto = "Danilo é um " + num;
+                console.log(texto);
+                // >> Danilo é um Developer
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
