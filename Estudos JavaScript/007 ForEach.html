@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            // forEach - O método forEach do JavaScript é uma de várias maneiras de percorrer arrays.
+
+                //O método forEach passa uma função de callback para cada elemento do array juntamente aos seguintes parâmetros:
+
+                // Valor atual (obrigatório) - O valor do elemento atual do array
+                // Índice (opcional) - O número do índice do elemento atual
+                // Array (opcional) - O objeto de array ao qual o elemento atual pertence
+
+                // Primeiro, para percorrer um array usando o método forEach, você precisaria de uma função de callback (ou de uma função anônima):
+
+                numbers.forEach(function() {
+                    // código
+                });
+
+                // A função será executada para todo elemento do array. Ela deve ter ao menos um parâmetro, que representa os elementos de um array:
+
+                numbers.forEach(function(number) {
+                    console.log(number);
+                });
+
+
+                // Parâmetros opcionais
+
+                    // Índice - O "índice", que representa o número do índice de cada elemento.
+                    // Array - O parâmetro do array é o próprio array. Ele também é opcional e pode ser usado, se necessário, em várias operações.
+
+
+
+                // Método comum.
+
+                var arr = ["teste1", "teste2", "teste3"];
+
+                for(var i = 0; i < arr.lenght; i++){
+                    console.log([i]);
+                }
+
+                // Método com forEach.
+
+                var array = ["teste1", "teste2", "teste3"];
+
+                array.forEach(function(value, index){
+                    console.log(index);
+
+                });
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

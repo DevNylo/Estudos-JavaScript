@@ -1,0 +1,34 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <style>
+            body{
+                width: 100%;
+                height: 100%;
+            }
+
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: blueviolet;
+                
+            }
+
+            .animBox{
+                transition: 3s;
+                margin-left: 200px;
+            }
+        </style>
+        <div class="box1">Direita</div>
+        <script>
+            var box = document.querySelectorAll(".box1")[0]; // Deposita o valor da classe box1 no indice 0;
+            setTimeout(()=>{ // Determina um tempo para a animação ser ativada, nesse caso é 1s pois 1000 milissegundo é igual a 1s.
+                box.classList.add('animBox'); // Acrescenta o evento que esta ocorrendo na classe animBox.
+            },1000);
+            
+        </script>
+        
+    </body>
+</html>

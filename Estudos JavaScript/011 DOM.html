@@ -1,0 +1,41 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p>Olá Mundo</p>
+        <p>Olá Mundo</p>
+        <p>Olá Mundo</p>
+        <p>Olá Mundo</p>
+
+    </body>
+    <script>
+        // DOM - Significa (Document Object Model) ou Modelo de Objeto do Documento que é uma forma simples de representação e manipulação dos nossos documentos pelo JavaScript.
+
+        // Podemos manipular:
+
+            // - Documento: O próprio documento.
+            // - Node: Um nó de algum objeto. (Ex. <div></div>,<p></p>,<h1></h1>).
+            // - Elemento: O elemento de forma individual que podemos acessar. (divs, span, p etc...)
+
+        // Como manipular?
+
+            // Funções do próprio Javascript direto do navegador.
+                // getElementById(), querySelector() etc...
+        
+        // DOM é diferente de Javascript pois é uma forma de representar o documento e não se limita apenas a Javascript. Apesar de que na maioria das vezes é utilizado de tal forma.
+
+        // Exemplos de utilização:
+
+        var paragrafo = document.getElementsByTagName('p');
+        window.alert(paragrafo.length);
+
+        window.alert(paragrafo[0]); // Retorna o primeiro parágrafo.
+
+        window.alert(paragrafo[1].innerHTML); // Retorna o conteúdo dentro do parágrafo.
+
+        paragrafo[1].innerHTML = 'Manipulado via JS'; // Manipula o conteúdo contido no parágrafo sobrescrevendo ele.
+
+    </script>
+    
+</html>

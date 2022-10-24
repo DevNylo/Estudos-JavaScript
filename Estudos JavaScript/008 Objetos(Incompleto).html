@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script>
+            // OBJETOS - Em JavaScript, quase tudo é objeto. Desde as funcionalidades padrão, como strings e arrays, até as APIs para navegadores baseadas na linguagem. Até você pode criar seus próprios objetos. Você pode encapsular funções e variáveis relacionadas de uma forma eficiente. Os objetos agem como uma espécie de manipuladores de dados. O JavaScript não é uma linguagem baseada em classes – é uma linguagem baseada em protótipos.
+
+                // - Uma linguagem baseada em protótipos tem a noção de um objeto prototípico, um objeto usado como um modelo do qual obtemos as propriedades iniciais para um novo objeto.
+
+            // Observe este código:
+
+                let names = {
+                    fname: "Dillion",
+                    lname: "Megida"
+                }
+                console.log(names.fname);
+                console.log(names.hasOwnProperty("mname"));
+                // Resultado esperado
+                // Dillion
+                // false
+
+            // A variável de objeto "names" tem apenas duas propriedades - fname e lname. Ela não tem métodos.
+
+            // Então, de onde vem hasOwnProperty?
+
+            // Bem, ele vem do protótipo Object.
+
+            // Experimente colocar os conteúdos da variável no console:
+
+               console.log(names);
+
+            // Quando expandimos os resultados no console, temos:
+
+                {fname: 'Dillion', lname: 'Megida'}
+                    fname: "Dillion"
+                    lname: "Megida"
+                    [[Prototype]]: Object
+                
+                //------------------------------------------//
+
+                //Observe a última propriedade - __proto__? Tente expandi-la:
+
+                [[Prototype]]: Object
+                constructor: ƒ Object()
+                hasOwnProperty: ƒ hasOwnProperty()
+                isPrototypeOf: ƒ isPrototypeOf()
+                propertyIsEnumerable: ƒ propertyIsEnumerable()
+                toLocaleString: ƒ toLocaleString()
+                toString: ƒ toString()
+                valueOf: ƒ valueOf()
+                __defineGetter__: ƒ __defineGetter__()
+                __defineSetter__: ƒ __defineSetter__()
+                __lookupGetter__: ƒ __lookupGetter__()
+                __lookupSetter__: ƒ __lookupSetter__()
+                __proto__: (...)
+                get __proto__: ƒ __proto__()
+                set __proto__: ƒ __proto__()
+
+                //Você verá um conjunto de propriedades sob o construtor do Object. Todas essas propriedades vêm do protótipo global de Object. Se olhar atentamente, perceberá também nossa hasOwnProperty oculta. Em outras palavras, todos os objetos têm acesso ao protótipo de Object. Eles não possuem essas propriedades, mas recebem acesso às propriedades pelo protótipo.
+
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

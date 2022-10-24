@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            // CALCULADORA
+
+            var num1 = prompt("Informe o primeiro número."); // Variável para receber o primeiro número.
+            var sinal = prompt("Escolha a operação ( + , - , * , / )"); // Nessa variável é recebido um valor como string por padrão.
+
+            // Aqui eu ja digo ao JS que enquato o valor recebido for diferente dos valores desejados ele reinicie a solicitação do sinal.
+            while(sinal != "+" && sinal != "*" && sinal != "/" && sinal != "-"){
+                window.alert("O sinal indicado está incorreto, tente novamente!");
+                sinal = prompt("Informe o sinal de sua operação.");
+            }
+            // Esses dois pontos são importantes pois assim eu especifico ao JS que os valores recebidos nas variável num1 e num2 devem ser interpretados como números inteiros e não como strings.
+            num1 = parseInt(num1); 
+            num2 = parseInt(num2);
+            // ----------------------------//
+
+            var num2 = prompt("Informe o segundo número"); // Segundo valor solicitado.
+
+            // Aqui estão as especidicações na qual o usuário solicitou e também qual o tipo de calculo.
+            if(sinal == "+"){
+                window.alert("O resultado da sua operação é "+num1 + num2);
+            }else if(sinal == "-"){
+                window.alert("O resultado da sua operação é "+num1 - num2);
+            }else if(sinal == "*"){
+                window.alert("O resultado da sua operação é "+num1 * num2);
+            }else if(sinal == "/"){
+                window.alert("O resultado da sua operação é "+num1 / num2);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

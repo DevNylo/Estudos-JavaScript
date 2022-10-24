@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <script>
+            // O JavaScript possui a classe Date que nos permite trabalhar com datas e horários. Se chamarmos o construtor Date sem parâmetros.
+
+            // UTC (Universal Time Coordinated) é o mesmo que GMT (Greenwich Mean Time). Ao definir uma data, sem especificar o fuso horário, o JavaScript usará o fuso horário do navegador.
+
+                // new Date(); - Cria um novo objeto de data com a data e hora atuais :
+
+                // Ex.
+
+                    const dataAtual = new Date();
+                    console.log(dataAtual); // Fri Aug 05 2022 19:30:03 GMT-0300 (Horário Padrão de Brasília)
+                    // Independente do formato de entrada, o JavaScript irá (por padrão) produzir datas no formato de string de texto completo.
+
+                // Métodos
+
+                // O método toDateString() converte uma data em um formato mais legível:
+                    
+                    const dataString = new Date();
+                    dataString.toDateString();
+                    console.log(dataString);
+
+                // O método toISOString() converte um objeto Date em uma string, usando o formato padrão ISO, a ISO 8601 é a norma internacional para a representação de datas e horas.
+
+                // A sintaxe ISO 8601 (AAAA-MM-DD) também é o formato de data JavaScript preferido:
+
+                    const dataISO = new Date();
+                    dataISO.toISOString();
+                    console.log(dataISO);
+
+            // new Date(year, month, ...)cria um novo objeto de data com data e hora especificadas . São 7 números e especificam ano, mês, dia, hora, minuto, segundo e milissegundo (nessa ordem):
+
+                // Ex.
+
+                    const anoMesDia = new Date(2022,07,05); // O JAVASCRIPT CONTA MESES DE 0 A 11.
+                    console.log(anoMesDia);                 // Janeiro = 0.
+                                                            // Dezembro = 11.
+
+                // ou
+
+                    const seteDigitos = new Date(2018, 11, 24, 10, 33, 30, 0);
+                    console.log(seteDigitos);
+            
+                // String
+
+                    const strings = ("05 de Agosto às 19h45.");
+                    console.log(strings);
+
+
+                // Milissegundos
+
+                    const milissegundo = new Date(0);
+                    console.log(milissegundo);
+
+
+            // Geralmente, existem 3 tipos de formatos de entrada de data JavaScript:
+
+                // Data ISO	"2015-03-25" (O Padrão Internacional).
+                // Data Curta "25-03-2015".
+                // Data Longa "25 de março de 2015" ou "25 de março de 2015".
+
+            // Metodos de obtenção de datas:
+
+                    //getFullYear() Get the year as a four digit number (yyyy)
+                    //getMonth() Get the month as a number (0-11)
+                    //getDate() Get the day as a number (1-31)
+                    //getHours() Get the hour (0-23)
+                    //getMinutes() Get the minute (0-59)
+                    //getSeconds() Get the second (0-59)
+                    //getMilliseconds() Get the millisecond (0-999)
+                    //getTime() Get the time (milliseconds since January 1, 1970)
+                    //getDay() Get the weekday as a number (0-6)
+                    //Date.now() Get the time. ECMAScript 5.
+
+                // Ex.
+
+                    const get = new Date();
+                    get.getMilliseconds();
+                    console.log(get);
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

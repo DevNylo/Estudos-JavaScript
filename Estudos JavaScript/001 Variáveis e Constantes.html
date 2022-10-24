@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <script>
+            // Variáveis - Uma variável (variable) é um local nomeado para armazenar um valor. Dessa forma, um valor pode ser acessado através de um nome predeterminado.
+
+            // Podemos mudar o tipo da variável livremente (tipagem fraca);
+
+            // Hoisting - As funções e variáveis são inicializadas no topo do código.
+
+            // As variáveis também podem ser criadas SOMENTE utilizando $ ou _ e não pode ser criada com número na frente.
+                // EX: 
+                    var 5nome = "Danilo"; //ERRADO
+                    var nome5 = "Danilo"; //CERTO
+
+                // camelCase
+
+                    var primeiroNome = "Danilo";
+
+                // Também posso criar variáveis sem valor;
+
+                    var nome;
+                
+                    // E depois atribuir valor a elas.
+
+                    nome = "Danilo";
+
+            //Tipos de Variáveis no JS.
+
+            // var = Variante global 
+            // let = Variante no escopo
+            // const = Constante (Não muda)
+
+                //----------VAR----------
+
+                var nome = "Danilo";
+                console.log(nome);
+
+                // A variável também pode ser alterada.
+
+                var idade = 23;
+                idade = 24;
+                console.log(idade);
+                    // 24
+
+                //----------LET----------
+
+                // Let é limitado ao escopo:
+
+                    // Forma errada.
+
+                {
+                    let sobrenome = "Rocha";
+                }
+                    console.log(sobrenome); // Note que está fora do escopo
+
+
+                    // Forma correta
+                
+                {
+
+                    let idade = 25;
+
+                    console.log(idade);
+
+                }
+
+                //-----CONSTANTES------
+
+                // O valor não pode ser alterado.
+
+                    // Forma correta
+
+                const nome = "Dan";
+                console.log(nome);
+
+                    // Forma errada
+
+                const nome = "Dan";
+                nome = "Nylo";
+                console.log(nome);
+                
+
+                //Tipos de variáveis.
+
+                //NUMBER
+                var num = 24;
+                //STRINGS
+                var nome = "Danilo";
+                //BOOLEAN
+                var boolean = true & false;
+                //NULL 
+                //UNDEFINED
+                var unde;
+                //OBJECT
+                
+                var obj = {
+                    nome: "Danilo",
+                    idade: 24,
+                    profissao: "Programador"
+                };
+                console.log(obj.nome);
+                    // Danilo
+
+                // da para verificar o tipo de dado com o "typeof";
+
+                    var num = 5;
+                    console.log(typeof num);
+                        // number
+
+                //Juntando variáveis
+
+                console.log(num + nome);
+
+                ou
+
+                var num = "Developer";
+                var texto = "Danilo é um " + num;
+                console.log(texto);
+                // >> Danilo é um Developer
+
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

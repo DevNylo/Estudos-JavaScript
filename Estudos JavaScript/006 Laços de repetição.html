@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script>
+            // While - O laço while, um dos mais simples em Javascript, testa uma determinada condição no início de     cada volta do laço e continua fazendo isso enquanto (while) a expressão condicional for avaliada como true.
+
+            while(condição){
+                ação;
+            }
+                
+
+                // Ex.
+                var d = 0;
+
+                while(d < 10){
+                    console.log(d);
+                    d++;
+                }
+
+                // 1,2,3,4,5,6,7,8,9
+
+                // while - Enquanto.
+                // (d < 10) - Condição.
+                // d++ - Condição e operador ++ ( d = d+1).
+
+                // Ex.2
+                var n = 0;
+
+                while(n < 10 , n <= 15){
+                    console.log(n);
+                    n++;
+                }
+
+                // 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
+
+            // For - Os laços for têm a mesma função dos laços while, fazer algo repetitivo. No entanto, ao invés de utilizar uma expressão desconhecida, utilizamos um conjunto fixo de circunstâncias. Nele, temos que inicializar uma variável com um valor qualquer, testar uma condição, e incrementar ou decrementar o valor da variável inicial, tudo na mesma instrução.
+
+            for ( valor inicial; condição; incremento++ ou decremento-- ) {
+	            Ações;
+            }
+
+                // Ex.
+
+                for(var d= 0; d <= 10; d++){
+                    console.log(d);
+                }
+
+            // Do - No laço while (que expliquei anteriormente) a condição é testada antes que o laço seja executado, com isso, caso a condição falhe, o laço nunca será executado. Do while é praticamente idêntico ao while, porém, a condição só é testada depois da ação do laço ser executada, assim, se a condição falhar, o laço será executado pelo menos uma vez.
+
+                // Ex. 
+
+                // Crio uma variável com valor 11
+                var count = 11;
+
+                // Inicio o laço com a condição
+                while ( count <= 10 ) {
+                    // Escrevo a variável count na página
+                    document.write( count );
+                    
+                    // Incremento a variável count em 1 a cada volta do laço
+                    count++;
+
+                // Agora o valor da variável count é 11, ou seja, a condição count <= 10 vai retornar false porque o valor da variável é maior que 10. Nesse caso, nosso laço não será executado. Porém, se modificarmos este laço para do while, ele será executado uma vez, exibindo 11 na tela, só depois vai verificar a condição, que retornará false e o laço termina.
+
+
+                // Ex.2
+
+                var count = 11;
+
+                do {
+                    document.write( count );
+                    count++;
+                } while ( count <= 10 ) // Só agora verifico a condição
+                } 
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

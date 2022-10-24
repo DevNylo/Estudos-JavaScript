@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgatando valor do Input</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+    
+    
+
+    <script defer>
+        const button = document.querySelector("#enviar") // Criei uma constante que irá receber o botão.
+
+        button.addEventListener('click', function(not){ // Aqui eu adicionei um evento de clique naquele botão e deixei um parâmetro na função.
+            not.preventDefault(); // Nesse parâmetro eu digo que o valor que estará no input, não deverá ser enviado.
+            const name = document.querySelector("#name"); // Logo dentro dessa função com evento de clique eu criei uma constante que receberá o input de texto.
+            const valor = name.value; // E logo depois outra constante que irá receber o valor que será digitado dentro do input e assim eu armazeno esse valor atribuído para ser utilizado posteriormente.
+
+            if(valor == "Danilo"){
+                alert("Seu nome está certo");
+            }else{
+                alert("Esse não é o seu nome.");
+            }
+
+        });
+
+
+    </script>
+</body>
+</html>
